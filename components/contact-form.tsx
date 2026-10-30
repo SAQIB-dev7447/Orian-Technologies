@@ -22,11 +22,18 @@ export function ContactForm() {
       return;
     }
 
+    const subject = `Portfolio inquiry from ${name}`;
+    if (/Android|iPhone|iPad|iPod|Windows Phone/i.test(navigator.userAgent) || navigator.maxTouchPoints > 1) {
+      const params = new URLSearchParams({ subject, body });
+      window.location.href = `mailto:saqib.nmomin@gmail.com?${params.toString()}`;
+      return;
+    }
+
     const params = new URLSearchParams({
       view: "cm",
       fs: "1",
       to: "saqib.nmomin@gmail.com",
-      su: `Portfolio inquiry from ${name}`,
+      su: subject,
       body,
     });
     window.location.href = `https://mail.google.com/mail/?${params.toString()}`;
