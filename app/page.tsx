@@ -8,6 +8,7 @@ import { SiteHeader } from "@/components/site-header";
 import { SiteFooter } from "@/components/site-footer";
 import { ContactForm } from "@/components/contact-form";
 import { EmailLink } from "@/components/email-link";
+import { AvailabilityBadge } from "@/components/availability-badge";
 
 const projects = [
   { no: "01", name: "Knowbot Analytics", type: "AI · Analytics dashboard", desc: "A clear command center for chatbot activity, usage, and knowledge resources.", label: "Analytics Dashboard", className: "finance", year: "2025", image: "/projects/knowbot-analytics.png", alt: "Knowbot bot usage analytics dashboard" },
@@ -51,6 +52,7 @@ export default function Home() {
         <div className="hero-art" aria-label="Saqib working at a computer in blue neon light">
           <Image className="hero-portrait" src="/saqib-at-work.png" alt="Saqib working at a computer, with blue neon lighting and a monitor" fill priority sizes="(max-width: 680px) 100vw, 50vw" />
           <div className="hero-portrait-shade" />
+          <AvailabilityBadge/>
         </div>
         <div className="hero-foot"><span>Scroll to explore</span><span className="scroll-line"/><span>01 / 06</span></div>
       </section>

@@ -135,6 +135,8 @@
 .about-portrait{z-index:0;object-fit:cover;object-position:50% 39%;-webkit-mask-image:radial-gradient(ellipse 98% 96% at 50% 48%,#000 67%,rgba(0,0,0,.86) 82%,transparent 100%);mask-image:radial-gradient(ellipse 98% 96% at 50% 48%,#000 67%,rgba(0,0,0,.86) 82%,transparent 100%)}
 .about-portrait-shade{position:absolute;inset:-4px;z-index:1;pointer-events:none;background:linear-gradient(90deg,rgba(3,5,7,.24),transparent 35%,transparent 75%,rgba(3,5,7,.23)),linear-gradient(180deg,rgba(3,5,7,.12),transparent 23%,transparent 75%,#030507 100%);filter:blur(5px)}
 .about-hero-art>span{z-index:2;left:22px;bottom:19px;padding:7px 9px;border:1px solid rgba(255,255,255,.08);border-radius:4px;background:rgba(3,5,7,.66);color:#9aaccd}
+.about-hero-art .about-status{top:16px;right:15px;bottom:auto;transform:none}
+@media(max-width:680px){.about-hero-art .about-status{top:12px;right:12px;width:108px;padding:8px 7px}.about-hero-art>span{right:132px;bottom:15px;left:12px;max-width:calc(100% - 150px);padding:6px 7px;font-size:6px;letter-spacing:.04em}}
 .scroll-reveal-pending{opacity:0;translate:0 18px;filter:blur(4px);transition:opacity .82s cubic-bezier(.2,.7,.2,1) var(--reveal-delay,0ms),translate .82s cubic-bezier(.2,.7,.2,1) var(--reveal-delay,0ms),filter .82s cubic-bezier(.2,.7,.2,1) var(--reveal-delay,0ms)}
 .scroll-reveal-pending.scroll-reveal-visible{opacity:1;translate:0 0;filter:blur(0)}
 main>section,main>footer,.page-hero>*,.project-card,.service-card,.quote-card,.belief-card,.work-case,.process-detail,.kindword-card,.contact-form,.skills-panel,.impact-panel,.impact-stat,.topbar,.footer{animation:none!important}
