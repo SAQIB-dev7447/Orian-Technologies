@@ -24,8 +24,8 @@ export function ContactForm() {
 
     const subject = `Portfolio inquiry from ${name}`;
     if (/Android|iPhone|iPad|iPod|Windows Phone/i.test(navigator.userAgent) || navigator.maxTouchPoints > 1) {
-      const params = new URLSearchParams({ subject, body });
-      window.location.href = `mailto:saqib.nmomin@gmail.com?${params.toString()}`;
+      const params = `subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+      window.location.href = `mailto:saqib.nmomin@gmail.com?${params}`;
       return;
     }
 
