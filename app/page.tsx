@@ -48,10 +48,9 @@ export default function Home() {
           <div className="hero-actions"><a href="#work" className="button button-primary">Explore my work <ArrowDownRight size={17} /></a><a href="#contact" className="button button-quiet">A little about me <ArrowDown size={15} /></a></div>
           <div className="availability"><span className="availability-icon"><Radio size={15} /></span><div><strong>Available for select projects</strong><span>Taking on work for early 2026</span></div></div>
         </div>
-        <div className="hero-art" aria-label="Portrait of Saqib against a blue neon ring">
-          <Image className="hero-portrait" src="/saqib-portrait.png" alt="Saqib wearing a black hoodie and sunglasses in front of a blue neon ring" fill priority sizes="(max-width: 680px) 100vw, 50vw" />
+        <div className="hero-art" aria-label="Saqib working at a computer in blue neon light">
+          <Image className="hero-portrait" src="/saqib-at-work.png" alt="Saqib working at a computer, with blue neon lighting and a monitor" fill priority sizes="(max-width: 680px) 100vw, 50vw" />
           <div className="hero-portrait-shade" />
-          <div className="hero-status"><div className="hero-status-row"><Radio size={13}/><span><small>AVAILABLE FOR</small><strong><i/> FREELANCE</strong></span></div><div className="hero-status-row"><MapPin size={13}/><span><small>LOCATION</small><strong>REMOTE</strong></span></div></div>
         </div>
         <div className="hero-foot"><span>Scroll to explore</span><span className="scroll-line"/><span>01 / 06</span></div>
       </section>
